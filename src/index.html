@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>简历——刘阳鹏</title>
+</head>
+
+<body>
+    <style id="style"></style>
+
+    <span id="html"></span>
+    <div id="wrap">
+        <div id="div1"></div>
+    </div>
+    <script src="main.js"> </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        *::after {
+            box-sizing: border-box;
+        }
+
+        *::before {
+            box-sizing: border-box;
+        }
+
+        #html {
+            word-break: break-all;
+        }
+
+        #div1 {
+            position: fixed;
+            /* display: inline-block; */
+            right: 50px;
+            top: 50px;
+            animation: rota 2s infinite linear;
+
+        }
+
+        @keyframes rota {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #div1::before,
+        #div1::after {
+            content: " ";
+            display: block;
+            position: absolute;
+        }
+
+        @media(max-width:500px) {
+            #html {
+                height: 50vh;
+                overflow: auto;
+            }
+
+            #wrap {
+                height: 50vh;
+            }
+
+            #div1 {
+                /* height: 50vh; */
+                position: relative;
+                top: 15vh;
+                /* right: 0; */
+                left: 25%;
+                /* transform: translate(-50%); */
+                animation: rota 2s infinite linear;
+
+
+            }
+        }
+    </style>
+</body>
+
+</html>
